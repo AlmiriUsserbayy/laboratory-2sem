@@ -1,0 +1,128 @@
+:root {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #333;
+    --btn: #6366f1;
+    --btn-hover: #4f46e5;
+    --delete: #ef4444;
+    --delete-hover: #dc2626;
+  }
+  
+  body.dark {
+    --bg: #1f2937;
+    --card: #374151;
+    --text: #f9fafb;
+    --btn: #818cf8;
+    --btn-hover: #6366f1;
+    --delete: #f87171;
+    --delete-hover: #ef4444;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg);
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  .header {
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--text);
+    font-size: 18px;
+  }
+  
+  .theme-btn {
+    padding: 8px 12px;
+    background: var(--btn);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .theme-btn:hover {
+    background: var(--btn-hover);
+  }
+  
+  .app {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+  
+  .input-block {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-block input {
+    padding: 10px;
+    border: 2px solid #dbe2ee;
+    border-radius: 8px;
+    transition: 0.2s;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    background: var(--btn);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .btn:hover {
+    background: var(--btn-hover);
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background: var(--card);
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: var(--text);
+    transition: 0.2s;
+  }
+  
+  .delete-btn {
+    background: var(--delete);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .delete-btn:hover {
+    background: var(--delete-hover);
+  }
+  
