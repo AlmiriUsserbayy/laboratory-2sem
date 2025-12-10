@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Менеджер задач</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <div class="header">
+    <div id="clock"></div>
+
+    <button id="themeToggle" class="theme-btn">🌙 Тема</button>
+  </div>
+
+  <div class="app">
+    <h1 class="title">Менеджер задач</h1>
+
+    <div class="input-block">
+      <input id="taskInput" placeholder="Введите задачу..." />
+      <input id="taskTime" type="time" />
+      <button id="addBtn" class="btn">Добавить</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
